@@ -51,6 +51,7 @@ class App extends PureComponent {
       newState = { displayValue: '0' };
     } else if (role === 'operation' && buttonValue === '=') {
       // Equals
+      // eslint-disable-next-line
       const finalValue = eval(`${secondaryDisplayValue} ${displayValue}`);
 
       newState = {
